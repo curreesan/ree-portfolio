@@ -2,19 +2,19 @@
   {
     "name": "Karen",
     "description": "AI-powered Discord moderation platform using a locally hosted LLM to classify toxic content in real time.",
-    "repoUrl": "https://github.com/TODO/karen",
+    "repoUrl": "https://github.com/curreesan/karen-bot",
     "liveUrl": "https://karen-bot-client.vercel.app/"
   },
   {
     "name": "Messaging App",
     "description": "Real-time messaging platform with authentication, friend management, and instant conversations.",
-    "repoUrl": "https://github.com/TODO/messaging-app",
+    "repoUrl": "https://github.com/curreesan/odin-messaging-app",
     "liveUrl": "https://odin-messaging-app-frontend.onrender.com/"
   },
   {
     "name": "Blog Platform",
     "description": "Full-stack blogging platform with a secure REST API, an author CMS, and a public reader client.",
-    "repoUrl": "https://github.com/TODO/blog-platform",
+    "repoUrl": "https://github.com/curreesan/odin-blog-api-public",
     "liveUrl": "https://odin-blog-api-public.onrender.com/"
   }
 ]

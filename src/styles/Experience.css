@@ -58,13 +58,9 @@
 }
 
 .exp-item__chevron {
+  display: flex;
+  align-items: center;
   color: var(--text-muted);
-  font-size: 1.6rem;
-  transition: transform var(--dur-fast) var(--ease-out);
-}
-
-.exp-item__chevron--open {
-  transform: rotate(180deg);
 }
 
 .exp-item__dates {

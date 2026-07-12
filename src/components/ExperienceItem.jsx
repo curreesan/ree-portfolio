@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { ChevronRight, ChevronDown } from "lucide-react";
 import { iconMap, getIconColor } from "../utils/icons";
 import skills from "../data/skills.json";
 import { playClickSound } from "../utils/clickSound";
@@ -11,9 +12,6 @@ function formatMonthYear(dateStr) {
   return date.toLocaleDateString("en-US", { month: "long", year: "numeric" });
 }
 
-// Looks up the friendly display name for a tech slug via skills.json,
-// falling back to the raw slug if it's not in there (e.g. a slug used
-// only in experience.json, never added to skills.json).
 function getTechName(slug) {
   const match = skills.find((skill) => skill.icon === slug);
   return match ? match.name : slug;
@@ -44,10 +42,8 @@ function ExperienceItem({ experience }) {
               Working
             </span>
           )}
-          <span
-            className={`exp-item__chevron ${isOpen ? "exp-item__chevron--open" : ""}`}
-          >
-            ⌄
+          <span className="exp-item__chevron">
+            {isOpen ? <ChevronDown size={18} /> : <ChevronRight size={18} />}
           </span>
         </div>
         <div className="exp-item__dates">{dateRange}</div>

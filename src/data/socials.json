@@ -10,5 +10,9 @@
     "url": "https://github.com/curreesan",
     "icon": "github"
   },
-  { "label": "Email", "url": "mailto:ree17official@gmail.com", "icon": "mail" }
+  {
+    "label": "Email",
+    "url": "https://mail.google.com/mail/?view=cm&fs=1&to=ree17official@gmail.com",
+    "icon": "gmail"
+  }
 ]

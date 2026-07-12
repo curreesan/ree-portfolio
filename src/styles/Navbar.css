@@ -1,6 +1,11 @@
 .navbar {
+  position: sticky;
+  top: 0;
+  z-index: 100;
   border-bottom: 1px solid var(--border);
-  background: var(--bg);
+  background: rgba(18, 17, 16, 0.75);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
 }
 
 .navbar__inner {

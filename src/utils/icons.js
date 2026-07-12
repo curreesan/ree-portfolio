@@ -14,6 +14,8 @@ import {
   siGit,
   siGithub,
   siPostman,
+  siX,
+  siGmail,
 } from "simple-icons";
 
 export const iconMap = {
@@ -32,12 +34,10 @@ export const iconMap = {
   git: siGit,
   github: siGithub,
   postman: siPostman,
+  x: siX,
+  gmail: siGmail,
 };
 
-// Some brand colors (GitHub's near-black, Express's pure black, etc.)
-// are unreadable against our dark background. Instead of hardcoding
-// exceptions per-icon, check the color's luminance and fall back to a
-// light neutral whenever the true brand color would be too dark to see.
 export function getIconColor(icon) {
   const hex = icon.hex;
   const r = parseInt(hex.substring(0, 2), 16);

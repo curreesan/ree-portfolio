@@ -87,9 +87,10 @@
 }
 
 .hero__social-link {
-  font-family: var(--font-sans);
-  font-size: 1.4rem;
-  color: var(--accent-mustard);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--text-secondary);
   text-decoration: none;
   transition: opacity var(--dur-fast) var(--ease-out);
 }

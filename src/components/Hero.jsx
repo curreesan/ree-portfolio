@@ -1,13 +1,36 @@
+import { FaLinkedin } from "react-icons/fa";
 import socials from "../data/socials.json";
 import { playClickSound } from "../utils/clickSound";
+import { iconMap } from "../utils/icons";
 import "../styles/Hero.css";
+
+function SocialIcon({ social }) {
+  if (social.icon === "linkedin") {
+    return <FaLinkedin size={18} color="var(--text-secondary)" />;
+  }
+
+  const icon = iconMap[social.icon];
+  if (!icon) return null;
+
+  return (
+    <svg
+      viewBox="0 0 24 24"
+      width="18"
+      height="18"
+      fill="var(--text-secondary)"
+      aria-hidden="true"
+    >
+      <path d={icon.path} />
+    </svg>
+  );
+}
 
 function Hero() {
   return (
     <section className="hero">
       <div className="container hero__grid">
         <div className="hero__avatar">
-          <img src="/avatar.png" alt="Purandhar" />
+          <img src="/pixelart.png" alt="Purandhar" />
         </div>
 
         <div className="hero__name">
@@ -15,7 +38,7 @@ function Hero() {
         </div>
 
         <div className="hero__tagline">
-          <p>Fullstack Dev · Engineer · Gamer</p>
+          <p>Junior Dev · Full Stack · AI ML</p>
         </div>
 
         <div className="hero__bio">
@@ -24,29 +47,30 @@ function Hero() {
 
         <div className="hero__intro">
           <p>
-            Hi, I'm Purandhar, an engineer who picked up fullstack development
-            and is now diving into AI/ML, looking to work with startups or
-            product-based teams where there's real room to keep learning.
+            Full Stack Developer diving into AI/ML, looking for opportunities in
+            startups or product-based teams with room to keep learning.
           </p>
         </div>
 
         <div className="hero__socials">
-          {socials.map((social) => (
-            <a
-              key={social.label}
-              href={social.url}
-              className="hero__social-link"
-              target={social.url.startsWith("mailto") ? undefined : "_blank"}
-              rel={
-                social.url.startsWith("mailto")
-                  ? undefined
-                  : "noopener noreferrer"
-              }
-              onClick={playClickSound}
-            >
-              {social.label}
-            </a>
-          ))}
+          {socials.map((social) => {
+            const isMailto = social.url.startsWith("mailto");
+
+            return (
+              <a
+                key={social.label}
+                href={social.url}
+                className="hero__social-link"
+                target={isMailto ? undefined : "_blank"}
+                rel={isMailto ? undefined : "noopener noreferrer"}
+                onClick={playClickSound}
+                aria-label={social.label}
+                title={social.label}
+              >
+                <SocialIcon social={social} />
+              </a>
+            );
+          })}
         </div>
       </div>
     </section>

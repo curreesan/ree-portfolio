@@ -13,9 +13,10 @@ const WALK_FRAMES = 8;
 
 const FRAME_DURATION = 120;
 const EASE = 0.0025;
-const IDLE_DISTANCE_THRESHOLD = 4; // px \u2014 close enough to the target counts as "arrived"
+const IDLE_DISTANCE_THRESHOLD = 4; // px — close enough to the target counts as "arrived"
 const OFFSET_X = 32;
 const OFFSET_Y = 32;
+const INITIAL_PADDING = 40; // keeps the cat fully inside the viewport on load
 
 function CursorPet() {
   const [supportsCursor] = useState(
@@ -23,8 +24,8 @@ function CursorPet() {
   );
 
   const spriteRef = useRef(null);
-  const position = useRef({ x: 0, y: 0 }); // starts top-left before any cursor input
-  const target = useRef({ x: 0, y: 0 });
+  const position = useRef({ x: INITIAL_PADDING, y: INITIAL_PADDING });
+  const target = useRef({ x: INITIAL_PADDING, y: INITIAL_PADDING });
   const facingLeft = useRef(false);
   const frameIndex = useRef(0);
   const lastFrameTime = useRef(0);
@@ -55,7 +56,7 @@ function CursorPet() {
         target.current.x - position.current.x,
         target.current.y - position.current.y,
       );
-      // Walking whenever there's real distance left to close \u2014 regardless
+      // Walking whenever there's real distance left to close — regardless
       // of whether the mouse itself is currently moving. Only idles once
       // it's actually caught up to the resting spot.
       isWalking.current = distance > IDLE_DISTANCE_THRESHOLD;
