@@ -1,0 +1,11 @@
+.cursor-pet {
+  position: fixed;
+  width: 64px;
+  height: 64px;
+  background-repeat: no-repeat;
+  image-rendering: pixelated;
+  pointer-events: none;
+  z-index: 9999;
+  top: 0;
+  left: 0;
+}

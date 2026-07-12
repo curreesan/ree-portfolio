@@ -1,0 +1,42 @@
+.about-page {
+  padding: 4.8rem 0 6.4rem;
+}
+
+.about-intro {
+  font-size: 1.6rem;
+  color: var(--text-secondary);
+  line-height: 1.7;
+  max-width: 72rem;
+  margin: 0 0 1.6rem;
+}
+
+.about-intro:last-of-type {
+  margin-bottom: 4.8rem;
+}
+
+.about-section {
+  margin-bottom: 3.6rem;
+}
+
+.about-section__heading {
+  font-size: 1.6rem;
+  font-weight: 600;
+  color: var(--text-primary);
+  margin: 0 0 1.6rem;
+}
+
+.about-section__boxes {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.about-box {
+  font-family: var(--font-sans);
+  font-size: 1.4rem;
+  color: var(--text-secondary);
+  background: var(--bg-raised);
+  border: 1px solid var(--border);
+  padding: 0.8rem 1.6rem;
+  border-radius: var(--radius);
+}

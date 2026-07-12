@@ -1,0 +1,47 @@
+{
+  "birth": { "year": 2003, "month": 8 },
+  "introTemplate": [
+    "Hi, I'm Purandhar, a {age}-year-old Full Stack Developer based in Chennai. I began my journey into web development through The Odin Project, where I learned by building real-world projects from the ground up. That project-based approach shaped how I solve problems and develop software.",
+    "Alongside full-stack development, I studied AI and Machine Learning during university and am currently strengthening my fundamentals by building AI-powered projects and exploring modern LLM technologies. My goal is to grow into an engineer who can build scalable products while effectively integrating AI into real-world applications.",
+    "I'm looking for opportunities with startups or product-focused companies where I can contribute, learn from experienced engineers, and continue growing as a developer."
+  ],
+  "sections": [
+    {
+      "title": "Movies",
+      "items": [
+        "Good Will Hunting",
+        "The Shawshank Redemption",
+        "A Silent Voice",
+        "Brooklyn Nine-Nine",
+        "The Bear",
+        "Spider-Man: Into the Spider-Verse",
+        "La La Land",
+        "Arrival",
+        "The Social Network",
+        "The Dictator",
+        "Fight Club",
+        "The Chronicles of Narnia",
+        "Harry Potter"
+      ]
+    },
+    {
+      "title": "Games",
+      "items": [
+        "Expedition 33",
+        "Persona 5",
+        "Counter-Strike 2",
+        "Valorant",
+        "Wizard101",
+        "Red Dead Redemption 2"
+      ]
+    },
+    {
+      "title": "Music",
+      "items": ["Rap", "Lofi", "R&B", "Jazz"]
+    },
+    {
+      "title": "Hobbies",
+      "items": ["Reading", "Gym", "Beatbox", "Entertainment"]
+    }
+  ]
+}
