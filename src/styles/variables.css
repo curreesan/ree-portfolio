@@ -1,0 +1,47 @@
+:root {
+  /* Base */
+  --bg: #121110;
+  --bg-outer: #000000; /* the space outside the boxed page on big screens */
+  --bg-raised: #1a1815;
+  --border: #2b2822;
+  --border-strong: #3a362f;
+
+  /* Text */
+  --text-primary: #f2ece0;
+  --text-secondary: #b3ab9c;
+  --text-muted: #7d7666;
+
+  /* Warm retro accents */
+  --accent-mustard: #c98a2b;
+  --accent-mustard-bg: #241f18;
+  --accent-olive: #8fae5c;
+  --accent-olive-bg: #1b2011;
+  --accent-rust: #b5502e;
+  --accent-rust-bg: #211611;
+
+  /* Fonts */
+  --font-sans: "Geist", -apple-system, BlinkMacSystemFont, sans-serif;
+  --font-mono: "Geist Mono", ui-monospace, monospace;
+
+  /* Layout */
+  --radius: 0.8rem;
+  --radius-lg: 1.2rem;
+  --content-width: 88rem; /* text/section column width, inside the page */
+  --page-max-width: 140rem; /* 1400px — the whole boxed page caps here */
+  --gutter: 6.4rem;
+
+  /* Motion */
+  --dur-fast: 120ms;
+  --dur-base: 220ms;
+  --ease-out: cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+html {
+  font-size: 62.5%;
+}
+
+@media (max-width: 768px) {
+  :root {
+    --gutter: 2rem;
+  }
+}
