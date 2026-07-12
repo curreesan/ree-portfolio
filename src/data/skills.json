@@ -1,0 +1,20 @@
+[
+  { "name": "Python", "category": "language", "icon": "python" },
+  { "name": "TypeScript", "category": "language", "icon": "typescript" },
+  { "name": "JavaScript", "category": "language", "icon": "javascript" },
+  { "name": "C++", "category": "language", "icon": "cplusplus" },
+
+  { "name": "React", "category": "framework", "icon": "react" },
+  { "name": "Node.js", "category": "framework", "icon": "nodedotjs" },
+  { "name": "Express", "category": "framework", "icon": "express" },
+  { "name": "FastAPI", "category": "framework", "icon": "fastapi" },
+
+  { "name": "PostgreSQL", "category": "database", "icon": "postgresql" },
+  { "name": "Prisma", "category": "database", "icon": "prisma" },
+  { "name": "Drizzle", "category": "database", "icon": "drizzle" },
+  { "name": "Supabase", "category": "database", "icon": "supabase" },
+
+  { "name": "Git", "category": "tool", "icon": "git" },
+  { "name": "GitHub", "category": "tool", "icon": "github" },
+  { "name": "Postman", "category": "tool", "icon": "postman" }
+]

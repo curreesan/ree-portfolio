@@ -1,0 +1,16 @@
+[
+  {
+    "company": "HTC Global Services",
+    "role": "AI Intern",
+    "start": "2025-03",
+    "end": "2025-06",
+    "location": "Remote",
+    "status": "past",
+    "technologies": ["python", "fastapi"],
+    "highlights": [
+      "Built a module using Opik's evaluation framework to streamline evaluation processes, migrating existing heuristic and LLM metrics onto the platform for consistent API integration.",
+      "Analyzed the RAGAS codebase to adapt LLM, SQL, and NLP metrics for agentic and RAG tasks, optimizing metric portability for Opik integration.",
+      "Standardized input formats for agentic metrics (goal accuracy, tool call accuracy, topic adherence) and built a FastAPI endpoint for seamless metric invocation."
+    ]
+  }
+]

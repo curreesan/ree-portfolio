@@ -1,0 +1,45 @@
+.projects {
+  padding: 4.8rem 0;
+}
+
+.projects__heading {
+  font-size: 2rem;
+  font-weight: 600;
+  color: var(--text-primary);
+  margin: 0 0 2.4rem;
+}
+
+.projects__list {
+  display: flex;
+  flex-direction: column;
+  gap: 2.4rem;
+}
+
+.project-item__header {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.project-item__name {
+  font-size: 1.6rem;
+  font-weight: 600;
+  color: var(--text-primary);
+}
+
+.project-item__icon-link {
+  display: flex;
+  align-items: center;
+  color: var(--text-secondary);
+  transition: color var(--dur-fast) var(--ease-out);
+}
+
+.project-item__icon-link:hover {
+  color: var(--accent-mustard);
+}
+
+.project-item__description {
+  font-size: 1.4rem;
+  color: var(--text-secondary);
+  margin: 0.6rem 0 0;
+}

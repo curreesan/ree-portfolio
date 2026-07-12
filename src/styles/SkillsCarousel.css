@@ -1,0 +1,44 @@
+.skills-carousel {
+  overflow: hidden;
+  border-top: 1px solid var(--border);
+  border-bottom: 1px solid var(--border);
+  padding: 2rem 0;
+  mask-image: linear-gradient(
+    to right,
+    transparent,
+    black 5%,
+    black 95%,
+    transparent
+  );
+}
+
+.skills-track {
+  display: flex;
+  width: max-content;
+  gap: 4rem;
+  animation: skills-scroll 30s linear infinite;
+}
+
+@keyframes skills-scroll {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+.skills-chip {
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+  font-family: var(--font-sans);
+  font-size: 1.4rem;
+  color: var(--text-secondary);
+  white-space: nowrap;
+}
+
+.skills-chip--text {
+  font-family: var(--font-mono);
+  color: var(--text-muted);
+}

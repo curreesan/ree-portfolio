@@ -1,0 +1,70 @@
+{
+  "pdfUrl": "https://drive.google.com/file/d/1N-l389fTbaAp_CuBo0jDZCIg2N5XN6NX/view?usp=drive_link",
+  "education": [
+    {
+      "institution": "Sri Ramachandra Faculty of Engineering and Technology",
+      "degree": "Bachelor of Technology in Artificial Intelligence and Data Analytics",
+      "start": "2021-07",
+      "end": "2025-07",
+      "gpa": "8.3"
+    }
+  ],
+  "experience": [
+    {
+      "company": "HTC Global Services",
+      "role": "AI Intern",
+      "start": "2025-03",
+      "end": "2025-06",
+      "location": "Remote",
+      "highlights": [
+        "Created a module using Opik's evaluation framework to streamline evaluation processes, migrating existing heuristic and LLM metrics onto the platform and standardizing implementations for enhanced API integration consistency.",
+        "Analyzed the RAGAS codebase to adapt LLM, SQL, and NLP metrics for agentic, RAG, and other tasks, alongside heuristic metrics, for Opik integration, optimizing metric portability for robust API-based evaluations.",
+        "Standardized input formats for agentic metrics, including agentic goal accuracy, agentic tool call accuracy, and agentic topic adherence, and developed a FastAPI endpoint for seamless metric invocation and API integration."
+      ]
+    }
+  ],
+  "projects": [
+    {
+      "name": "Karen",
+      "stack": ["React", "TypeScript", "Express", "PostgreSQL", "Drizzle ORM"],
+      "highlights": [
+        "Developed an AI-powered Discord moderation platform that analyzes messages in real time using a locally hosted LLM (Llama 3.2 via Ollama), classifying toxic content by category and severity to automate moderation workflows.",
+        "Engineered a three-service architecture comprising a Discord bot, Express API, and React dashboard, implementing Discord OAuth 2.0 and JWT authentication for secure moderation management.",
+        "Built real-time moderation pipelines with Socket.io and configurable offense tracking, enabling live dashboard updates and repeat-offender detection."
+      ]
+    },
+    {
+      "name": "Messaging App",
+      "stack": ["React", "Express", "PostgreSQL", "Prisma"],
+      "highlights": [
+        "Developed a real-time messaging platform supporting user authentication, friend management, and instant conversations.",
+        "Engineered a relational database schema with Prisma to efficiently manage users, friendships, conversations, participants, and messages.",
+        "Implemented REST APIs secured with Supabase JWT, integrating Socket.io for real-time message delivery and live conversation updates."
+      ]
+    },
+    {
+      "name": "Blog Platform",
+      "stack": ["React", "Express", "PostgreSQL", "Prisma"],
+      "highlights": [
+        "Developed a full-stack blogging platform enabling users to create, edit, and manage blog posts through a secure RESTful architecture.",
+        "Developed REST APIs supporting CRUD operations for posts, comments, and user management, securing protected endpoints with Passport.js and JWT authentication.",
+        "Built separate React frontends: an author CMS for content management and a public client for readers, integrated with a shared authenticated REST API."
+      ]
+    }
+  ],
+  "skills": {
+    "languages": ["Python", "TypeScript", "JavaScript", "C++"],
+    "technologies": [
+      "React.js",
+      "Node.js",
+      "Express.js",
+      "FastAPI",
+      "Socket.io",
+      "PostgreSQL",
+      "Prisma",
+      "Drizzle",
+      "Supabase"
+    ],
+    "tools": ["Git", "GitHub", "Postman"]
+  }
+}

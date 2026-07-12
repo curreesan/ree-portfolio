@@ -27,7 +27,7 @@
   --radius: 0.8rem;
   --radius-lg: 1.2rem;
   --content-width: 88rem; /* text/section column width, inside the page */
-  --page-max-width: 140rem; /* 1400px — the whole boxed page caps here */
+  --page-max-width: 88rem; /* 1400px — the whole boxed page caps here */
   --gutter: 6.4rem;
 
   /* Motion */
